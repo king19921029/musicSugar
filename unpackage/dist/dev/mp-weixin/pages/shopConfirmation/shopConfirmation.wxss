@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+page {
+  background: #f4f4f4;
+}
+.box > .city_dz {
+  margin-top: 40rpx;
+  border-radius: 20rpx;
+}
+.box > .city_dz .headers {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.box > .city_dz .headers > image {
+      width: 64rpx;
+      height: 64rpx;
+}
+.box > .city_dz .headers .user_msg {
+      padding: 30rpx 0 20rpx 0;
+      width: 84%;
+}
+.box > .city_dz .headers .user_msg .city {
+        line-height: 46rpx;
+}
+.box > .city_dz .headers .user_msg .user_name {
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        margin-bottom: 30rpx;
+}
+.box > .city_dz .headers .user_msg .user_name .name {
+          font-size: 32rpx;
+          font-weight: bold;
+          margin-right: 20rpx;
+}
+.box .none_dz {
+  margin-top: 40rpx;
+  border-radius: 20rpx;
+  padding: 72rpx 0;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+.box .none_dz .address_icon {
+    width: 64rpx;
+    height: 64rpx;
+    margin-right: 30rpx;
+}
+.box .none_dz .right_icon {
+    width: 14rpx;
+    height: 22rpx;
+}
+.box .none_dz .name {
+    width: 82%;
+}
+.box .none_dz .none_dz_d {
+    position: absolute;
+    width: 92%;
+    height: 4rpx;
+    left: 4%;
+    bottom: 0;
+}
+.box .shop_content_bot {
+  padding-bottom: 142rpx;
+}
+.box .shop_content {
+  padding: 30rpx 0 50rpx 0;
+  border-radius: 20rpx;
+  margin-top: 30rpx;
+}
+.box .shop_content .shop_info {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.box .shop_content .shop_info .shop_img {
+      width: 196rpx;
+      height: 189rpx;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 16rpx;
+}
+.box .shop_content .shop_info .shop_msg {
+      width: 62%;
+      height: 130rpx;
+}
+.box .shop_content .shop_info .shop_msg .mic_name {
+        font-size: 32rpx;
+        font-weight: 500;
+        margin-bottom: 14rpx;
+}
+.box .shop_content .shop_info .shop_msg .pic_color {
+        font-size: 32rpx;
+        margin-top: 20rpx;
+}
+.box .shop_num {
+  margin-top: 40rpx;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.box .shop_num .left_title {
+    width: 33%;
+    text-align: end;
+}
+.box .shop_num .right_title {
+    width: 62%;
+}
+.box .footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 112rpx;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.box .footer .footer_shop_num {
+    font-size: 28rpx;
+    color: #666666;
+}
+.box .footer .all_pic {
+    font-size: 32rpx;
+    margin-left: 24rpx;
+}
+.box .footer .pic_color {
+    font-size: 32rpx;
+}
+.box .footer .footer_btn {
+    width: 240rpx;
+    height: 84rpx;
+    background: #ff6666;
+    border-radius: 42rpx;
+    color: #fff;
+    line-height: 84rpx;
+    text-align: center;
+    margin: 0 30rpx;
+    font-size: 32rpx;
+}
+

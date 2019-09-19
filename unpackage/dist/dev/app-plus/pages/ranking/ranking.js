@@ -1,0 +1,2 @@
+setCssToHead(["@charset \x22UTF-8\x22;\n.",[1],"box { background: #f4f4f4; height: 100vh; }\n",],undefined,{path:"./pages/ranking/ranking.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/ranking/ranking.wxml') } }));

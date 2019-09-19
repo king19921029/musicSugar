@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "购物车",
+  "usingComponents": {
+    "alert-box": "/components/alertBox/alertBox"
+  }
+}

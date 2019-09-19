@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+    <head>
+        <meta charset="UTF-8" />
+        <script>
+            var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+                CSS.supports('top: constant(a)'))
+            document.write(
+                '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+                (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+        </script>
+        <title>View</title>
+        <style>
+            * {
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            input[type="search"i]::-webkit-search-cancel-button {
+                display: none;
+            }
+        </style>
+        <script>
+            var __wxConfig = {"debug":false,"appname":"musicSugar","entryPagePath":"pages/index/index.html","page":{"pages/index/index.html":{"window":{"navigationBarTitleText":"音芙·音乐棒棒糖","navigationBarBackgroundColor":"#FF6666","navigationBarTextStyle":"white","usingComponents":{"home-alert":"/components/homeAlert/homeAlert"}}},"pages/micPlayPage/micPlayPage.html":{"window":{"navigationBarTitleText":"音频播放","usingComponents":{}}},"pages/login/login.html":{"window":{"navigationBarTitleText":"登录音芙","usingComponents":{}}},"pages/shopConfirmation/shopConfirmation.html":{"window":{"navigationBarTitleText":"确认订单","usingComponents":{}}},"pages/shopDetails/shopDetails.html":{"window":{"navigationBarTitleText":"商品详情","usingComponents":{}}},"pages/cart/cart.html":{"window":{"navigationBarTitleText":"购物车","usingComponents":{"alert-box":"/components/alertBox/alertBox"}}},"pages/mine/mine.html":{"window":{"navigationBarTitleText":"音符·音乐棒棒糖","navigationBarBackgroundColor":"#FF6666","navigationBarTextStyle":"white","usingComponents":{}}},"pages/myOrder/myOrder.html":{"window":{"navigationBarTitleText":"我的订单","usingComponents":{}}},"pages/address/address.html":{"window":{"navigationBarTitleText":"添加收货地址","usingComponents":{}}},"components/homeAlert/homeAlert.html":{"window":{"navigationBarTitleText":"注册弹框","usingComponents":{}}},"pages/ranking/ranking.html":{"window":{"navigationBarTitleText":"销量排行","usingComponents":{}}},"pages/myTbox/myTbox.html":{"window":{"navigationBarTitleText":"我的糖盒","usingComponents":{}}},"pages/customized/customized.html":{"window":{"navigationBarTitleText":"定制","usingComponents":{}}},"pages/starMusic/starMusic.html":{"window":{"navigationBarTitleText":"明星音频","usingComponents":{}}},"pages/welcome/welcome.html":{"window":{"navigationBarTitleText":"启动页","usingComponents":{}}},"pages/dm/dm.html":{"window":{"navigationBarTitleText":"dm","usingComponents":{}}},"components/mic/mic.html":{"window":{"navigationBarTitleText":"音乐全局组件","usingComponents":{}}},"components/alertBox/alertBox.html":{"window":{"usingComponents":{}}}},"global":{"window":{"navigationBarTextStyle":"black","navigationBarTitleText":"音芙","navigationBarBackgroundColor":"#FFFFFF","backgroundColor":"#F8F8F8"}},"tabBar":{"color":"#000000","selectedColor":"#FF3366","backgroundColor":"#FFFFFF","borderStyle":"black","list":[{"iconPath":"/static/img/home.png","selectedIconPath":"/static/img/home_selected.png","pagePath":"pages/index/index.html","text":"首页"},{"iconPath":"/static/img/dz.png","selectedIconPath":"/static/img/dz_selected.png","pagePath":"pages/customized/customized.html","text":"定制"},{"iconPath":"/static/img/card.png","selectedIconPath":"/static/img/card_selected.png","pagePath":"pages/cart/cart.html","text":"购物车"},{"iconPath":"/static/img/mine.png","selectedIconPath":"/static/img/mine_selected.png","pagePath":"pages/mine/mine.html","text":"我的"}],"position":"bottom"},"networkTimeout":{"request":60000,"connectSocket":60000,"uploadFile":60000,"downloadFile":60000},"platform":"devtools","pages":["pages/index/index","pages/micPlayPage/micPlayPage","pages/login/login","pages/shopConfirmation/shopConfirmation","pages/shopDetails/shopDetails","pages/cart/cart","pages/mine/mine","pages/myOrder/myOrder","pages/address/address","components/homeAlert/homeAlert","pages/ranking/ranking","pages/myTbox/myTbox","pages/customized/customized","pages/starMusic/starMusic","pages/welcome/welcome","pages/dm/dm","components/mic/mic","components/alertBox/alertBox"],"nvueCompiler":"weex","renderer":"auto","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"compilerVersion":"2.2.2","usingComponents":{"page-mic":"/components/mic/mic","home-alert":"/components/homeAlert/homeAlert","alert-box":"/components/alertBox/alertBox"}}
+        </script>
+        <script>
+            var __id__ = '';
+            window.__dispatchGenerateFunc__ = function(page) {
+                __id__ = page;
+                document.title = page;
+                // window.history.pushState('', '', page);
+                var wxss = page.replace('.html', '.wxss')
+                if (
+                    typeof __wxAppCode__ !== 'undefined' &&
+                    __wxAppCode__.hasOwnProperty(wxss)
+                ) {
+                    var setCssToHead = __wxAppCode__[wxss]
+                    typeof setCssToHead === 'function' && setCssToHead()
+                    document.dispatchEvent(new CustomEvent("generateFuncReady", {
+                        detail: {
+                            generateFunc: $gwx(page.replace('.html', '.wxml'))
+                        }
+                    }));
+                } else {
+                    plus.webview.currentWebview().setJsFile('_www/' + page.replace('.html', '.js'));
+                }
+            };
+        </script>
+        <script src="__uniappes6.js"></script>
+        <script src="uniapp://ready"></script>
+    </head>
+
+    <body>
+        <div></div>
+    </body>
+
+</html>

@@ -1,0 +1,151 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.box {
+  background: #f4f4f4;
+  height: 100vh;
+}
+.box .order_status {
+    padding: 30rpx 0;
+}
+.box > .city_dz {
+    margin-top: 40rpx;
+    border-radius: 20rpx;
+}
+.box > .city_dz .headers {
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+}
+.box > .city_dz .headers > image {
+        width: 64rpx;
+        height: 64rpx;
+}
+.box > .city_dz .headers .user_msg {
+        padding: 30rpx 0 20rpx 0;
+        width: 84%;
+}
+.box > .city_dz .headers .user_msg .city {
+          line-height: 46rpx;
+}
+.box > .city_dz .headers .user_msg .user_name {
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          margin-bottom: 30rpx;
+}
+.box > .city_dz .headers .user_msg .user_name .name {
+            font-size: 32rpx;
+            font-weight: bold;
+            margin-right: 20rpx;
+}
+.box .content .bg_fff {
+    padding: 40rpx 0 20rpx 0;
+    border-radius: 20rpx;
+    margin-top: 30rpx;
+}
+.box .content .bg_fff .border_top {
+      padding: 30rpx 0 10rpx 0;
+}
+.box .content .bg_fff .shop_list image {
+      width: 42rpx;
+      height: 42rpx;
+      margin-right: 21rpx;
+}
+.box .content .bg_fff .shop_list .list_content {
+      margin: 30rpx 0 5rpx 0;
+}
+.box .content .bg_fff .shop_list .list_content .list_img {
+        width: 195rpx;
+        height: 188rpx;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 16rpx;
+}
+.box .content .bg_fff .shop_list .list_content .list_msg {
+        width: 64%;
+        height: 148rpx;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+}
+.box .content .bg_fff .shop_list .list_content .list_msg .list_msg_top {
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+}
+.box .content .bg_fff .shop_list .list_content .list_msg .list_msg_top .list_num_box {
+            text-align: end;
+            width: 25%;
+            font-size: 24rpx;
+}
+.box .content .bg_fff .shop_list .list_content .list_msg .list_msg_top .list_name_box {
+            font-size: 28rpx;
+            font-weight: bold;
+            width: 70%;
+}
+.box .content .bg_fff .shop_list .list_content .list_msg .list_msg_top .margin_tops {
+            margin-top: 10rpx;
+}
+.box .content .bg_fff .shop_list .list_content .list_msg .list_msg_bot {
+          font-size: 24rpx;
+          text-align: end;
+}
+.box .content .bg_fff .shop_list .list_content .list_msg .list_msg_bot text {
+            font-size: 28rpx;
+}
+.box .content .bg_fff .order_msg {
+      margin-top: 30rpx;
+}
+.box .content .bg_fff .margin_bottoms {
+      margin-bottom: 30rpx;
+}
+.box .content .bg_fff .order_msg_color {
+      color: #999999;
+}
+.box .bottom_box {
+    font-size: 24rpx;
+    color: #333333;
+    margin-top: 30rpx;
+    padding: 30rpx 0 1rpx 0;
+    border-radius: 20rpx;
+}
+.box .bottom_box > view {
+      margin-bottom: 30rpx;
+}
+

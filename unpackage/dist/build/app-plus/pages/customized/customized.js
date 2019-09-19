@@ -1,0 +1,2 @@
+setCssToHead(["@charset \x22UTF-8\x22;\n.",[1],"box .",[1],"mic_tab { margin-top: 0; }\n.",[1],"box .",[1],"star_mic { margin-top: 0; padding: ",[0,30]," 0; background: #f4f4f4; }\n",],undefined,{path:"./pages/customized/customized.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/customized/customized.wxml') } }));

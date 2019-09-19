@@ -1,0 +1,1 @@
+<view class="alert_box display_flex"><view class="bg_fff"><view class="border_bottom">确认将这1个宝贝删除吗？</view><view class="display_flex alert_bot"><view data-event-opts="{{[['tap',[['close',['$event']]]]]}}" bindtap="__e">我在想想</view><view data-event-opts="{{[['tap',[['deleteFun',['$event']]]]]}}" class="color_all" bindtap="__e">删除</view></view></view></view>

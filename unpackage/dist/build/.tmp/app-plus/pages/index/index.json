@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "音芙·音乐棒棒糖",
+  "navigationBarBackgroundColor": "#FF6666",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "home-alert": "/components/homeAlert/homeAlert"
+  }
+}

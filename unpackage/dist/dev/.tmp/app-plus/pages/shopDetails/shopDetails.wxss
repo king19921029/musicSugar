@@ -1,0 +1,221 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+button::after {
+  border: none;
+}
+button {
+  border: none;
+  background: #FFFFFF;
+  padding: 0;
+  margin: 0;
+  font-size: 22rpx;
+  line-height: 1;
+}
+.box .uni-padding-wrap {
+  width: 100%;
+  height: 620rpx;
+}
+.box .uni-padding-wrap .swiper {
+    width: 100%;
+    height: 620rpx;
+    position: relative;
+}
+.box .uni-padding-wrap .swiper .swiper_num {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 25rpx;
+      width: 80rpx;
+      height: 50rpx;
+      color: #fff;
+      z-index: 998;
+      text-align: center;
+      line-height: 50rpx;
+      right: 5%;
+      bottom: 5%;
+}
+.box .uni-padding-wrap .swiper image {
+      width: 100%;
+      height: 620rpx;
+}
+.box .headers {
+  height: 160rpx;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.box .headers .pic_color {
+    font-size: 40rpx;
+    margin-bottom: 14rpx;
+}
+.box .headers .pic_color .som_font {
+      font-size: 28rpx;
+}
+.box .headers .mic_name {
+    font-weight: 500;
+    font-size: 32rpx;
+    margin-top: 14rpx;
+}
+.box .headers .bg_all {
+    width: 150rpx;
+    height: 66rpx;
+    background: #ff6666;
+    border-radius: 56rpx;
+    color: #fff;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    line-height: 66rpx;
+    font-size: 28rpx;
+}
+.box .headers .bg_all image {
+      width: 40rpx;
+      height: 40rpx;
+      margin-left: 14rpx;
+}
+.box .com_block {
+  width: 100%;
+  height: 20rpx;
+  background: #f8f8f8;
+}
+.box .shop_msg {
+  height: 84rpx;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.box .fwb {
+  height: 50vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.box .footer_fbox {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #FFFFFF;
+}
+.box .footer {
+  height: 128rpx;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.box .footer .display_column {
+    font-size: 22rpx;
+    color: #333333;
+}
+.box .footer image {
+    width: 33rpx;
+    height: 33rpx;
+    margin-bottom: 10rpx;
+}
+.box .footer .display_flex {
+    width: 562rpx;
+    height: 84rpx;
+    border-radius: 40rpx;
+    overflow: hidden;
+}
+.box .footer .display_flex view {
+      width: 50%;
+      height: 84rpx;
+      line-height: 84rpx;
+      text-align: center;
+      color: #fff;
+}
+.box .footer .display_flex .add {
+      background: #F7B500;
+}
+.box .show_block {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.box .show_block .shop_content {
+    width: 100%;
+    background: #fff;
+    height: 471rpx;
+    padding: 30rpx 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.box .show_block .shop_content .shop_info {
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+}
+.box .show_block .shop_content .shop_info .shop_img {
+        width: 196rpx;
+        height: 189rpx;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 16rpx;
+}
+.box .show_block .shop_content .shop_info .shop_msg {
+        width: 58%;
+        height: 130rpx;
+}
+.box .show_block .shop_content .shop_info .shop_msg .pic_color {
+          font-size: 50rpx;
+          margin-bottom: 20rpx;
+}
+.box .show_block .shop_content .shop_info .close {
+        height: 189rpx;
+}
+.box .show_block .shop_content .shop_info .close .close_icon {
+          width: 22rpx;
+          height: 22rpx;
+}
+.box .show_block .shop_num {
+    margin-top: 40rpx;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.box .show_block .yes {
+    height: 84rpx;
+    background: #ff6666;
+    border-radius: 42rpx;
+    line-height: 84rpx;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 15%;
+}
+

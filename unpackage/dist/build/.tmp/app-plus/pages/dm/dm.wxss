@@ -1,0 +1,78 @@
+
+image{
+  width: 100%;
+}
+/* 弹幕 */
+.box{
+  width: 100%;
+  height: 20vh;
+  background: rgba(0, 0, 0,.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.list{
+  height: 100rpx;
+  position: relative;
+}
+.dm{
+  width: 210rpx;
+  height: 50rpx;
+  background:#fff;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  position: absolute;
+  right: -30%;
+  top: 0;
+  overflow:hidden;
+}
+@-webkit-keyframes lanimation{
+from {
+    right: 0
+}
+to {
+    right: 100%
+}
+}
+.start{
+  -webkit-animation-name: lanimation;
+          animation-name: lanimation; /*动画的名称 */
+  -webkit-animation-duration: 3000ms;
+          animation-duration: 3000ms; /*动画从开始到结束的时间*/
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; /*动画执行快慢的参数*/
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.start2{
+  -webkit-animation-name: lanimation;
+          animation-name: lanimation; /*动画的名称 */
+  -webkit-animation-duration: 3500ms;
+          animation-duration: 3500ms; /*动画从开始到结束的时间*/
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; /*动画执行快慢的参数*/
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.start3{
+  -webkit-animation-name: lanimation;
+          animation-name: lanimation; /*动画的名称 */
+  -webkit-animation-duration: 4000ms;
+          animation-duration: 4000ms; /*动画从开始到结束的时间*/
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; /*动画执行快慢的参数*/
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+	
+
+	
+	
+

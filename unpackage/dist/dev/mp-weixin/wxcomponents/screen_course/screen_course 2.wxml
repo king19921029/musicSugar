@@ -1,0 +1,38 @@
+<!--components/screen_course/screen_course.wxml-->
+
+<form catchsubmit="formSubmit" catchreset="formReset">
+  <view class='scr_course' hidden='{{Isscreen_cou}}'>
+    <view class='scr_course_sub1'>
+      <text class='scr_course_sub1_sub1'>选择课程(可多选)</text>
+      <text class='scr_course_sub1_sub2'>已选{{stroenum}}项</text>
+    </view>
+    <scroll-view scroll-y="true" style="height: 920rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}">
+      <view class='scr_course_sub2'>
+        <view class='scr_age'>
+          <view class='scr_age_sub2'>
+            <view class="scr_age_border {{allstore?'scr_age_border':'no_border'}}" bindtap='canleallstore'>
+              <text>全部年龄段</text>
+            </view>
+            <checkbox-group bindchange="brandcheck" class='free-radios' name="brandbox">
+              <label class="{{item.Checked?'scr_age_border':'no_border'}}" wx:for="{{AgeGroupList}}" wx:key="{{item.value}}">
+                <view class="weui-cell__hd">
+                  <checkbox value="{{item.Id}}" checked="{{item.Checked}}" hidden='true' />
+                </view>
+                <view>{{item.StartNum}}-{{item.EndNum}}月</view>
+              </label>
+            </checkbox-group>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+    <view class='scr_course_sub3'>
+      <view class='scr_course_sub3_sub1' bindtap='canclebtn'>
+        <text>取消</text>
+      </view>
+      <view class='scr_course_sub3_sub2'>
+        <button formType="submit" class='tijiao'>确定</button>
+      </view>
+    </view>
+  </view>
+  <view class='mask' hidden='{{Isscreen_cou}}' bindtap="canclebtn"></view>
+</form>

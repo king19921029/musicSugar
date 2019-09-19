@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"mic_components\x3e.",[1],"com_width{ display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; font-size: ",[0,30],"; padding: ",[0,20]," 0; }\n",],undefined,{path:"./components/mic/mic.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./components/mic/mic.wxml') } }));

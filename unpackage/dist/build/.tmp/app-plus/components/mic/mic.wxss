@@ -1,0 +1,14 @@
+
+.mic_components>.com_width{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	font-size: 30rpx;
+	padding: 20rpx 0;
+}
+
